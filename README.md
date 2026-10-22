@@ -124,11 +124,11 @@ Let:
 - \(s\) be the sample standard deviation.
 
 The estimated mean retail value per box is:
-
-\[
+$$
+\
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i
-\]
-
+\
+$$
 The sample variance is:
 
 \[
