@@ -124,16 +124,20 @@ Let:
 - \(s\) be the sample standard deviation.
 
 The estimated mean retail value per box is:
+
 $$
 \
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i
 \
 $$
+
 The sample variance is:
 
-\[
+$$
+\
 s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
-\]
+\
+$$
 
 The sample mean is the point estimate of the population mean under the sampling design.
 
@@ -147,23 +151,29 @@ For this prototype, the operational interpretation is:
 
 When the population standard deviation is unknown, a one-sample Student's *t* interval is the initial method, provided the sampling design and distributional conditions make it appropriate:
 
-\[
+$$
+\
 \bar{x} \pm t_{0.95,n-1}\frac{s}{\sqrt{n}}
-\]
+\
+$$
 
 For a finite population sampled without replacement, the standard error can incorporate the finite-population correction (FPC):
 
-\[
+$$
+\
 SE(\bar{x}) =
 \sqrt{\left(1-\frac{n}{N}\right)\frac{s^2}{n}}
-\]
+\
+$$
 
 The corresponding interval used by the prototype may therefore be written as:
 
-\[
+$$
+\
 \bar{x} \pm t_{0.95,n-1}
 \sqrt{\left(1-\frac{n}{N}\right)\frac{s^2}{n}}
-\]
+\
+$$
 
 Here, \(t_{0.95,n-1}\) is the 95th percentile of the Student's *t* distribution with \(n-1\) degrees of freedom, giving a two-sided 90% interval.
 
