@@ -120,7 +120,7 @@ Let:
 - \(N\) be the number of boxes in the population.
 - \(n\) be the number of sampled boxes.
 - \(x_i\) be the assessed retail value of sampled box \(i\).
-- \(\bar{x}\) be the sample mean.
+- $\bar{x}$ be the sample mean.
 - \(s\) be the sample standard deviation.
 
 The estimated mean retail value per box is:
