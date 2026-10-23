@@ -86,9 +86,11 @@ The sample contains 100 distinct boxes selected from the 1,000-box population. E
 
 The sampling fraction is
 
-\[
+$$
+\
 f=\frac{n}{N}=\frac{100}{1000}=0.10.
-\]
+\
+$$
 
 The random seed is fixed to support reproducibility.
 
@@ -98,25 +100,31 @@ The random seed is fixed to support reproducibility.
 
 The sample mean estimates the population mean:
 
-\[
+$$
+\
 \bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i,
-\]
+\
+$$
 
-where \(x_i\) is the observed retail value of the \(i\)-th sampled box and \(n\) is the sample size.
+where $x_i\$ is the observed retail value of the $i\$-th sampled box and \(n\) is the sample size.
 
 For the selected sample,
 
-\[
+$$
+\
 \bar{x}=\$108.5662\approx \$108.57.
-\]
+\
+$$
 
 ### 5.2 Sample Variance
 
 The sample variance measures variability in the observed box values:
 
-\[
+$$
+\
 s^2=\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2.
-\]
+\
+$$
 
 The sample standard deviation is the square root of the sample variance.
 
@@ -130,10 +138,12 @@ The sample standard deviation is the square root of the sample variance.
 
 For sampling without replacement from a finite population, the estimated standard error of the sample mean is calculated as
 
-\[
+$$
+\
 SE(\bar{x})=
 \sqrt{\left(1-\frac{n}{N}\right)\frac{s^2}{n}}.
-\]
+\
+$$
 
 Here, \(N\) is the population size and \(n\) is the sample size.
 
@@ -141,25 +151,31 @@ The finite population correction accounts for the reduction in sampling variance
 
 For this sample,
 
-\[
+$$
+\
 SE(\bar{x})\approx \$6.52.
-\]
+\
+$$
 
 ### 5.4 Two-Sided 90% Confidence Interval
 
 The baseline confidence interval is calculated using Student's \(t\)-distribution:
 
-\[
+$$
+\
 \bar{x}\pm t_{0.95,n-1}SE(\bar{x}).
-\]
+\
+$$
 
 The lower and upper bounds for the selected sample are:
 
-\[
+$$
+\
 \boxed{\$97.74\leq \mu\leq \$119.40}
-\]
+\
+$$
 
-where \(\mu\) denotes the population mean.
+where $\(\mu\)$ denotes the population mean.
 
 This is an approximate interval procedure. Its actual coverage depends on the population distribution, sample size, and adequacy of the approximation.
 
@@ -167,22 +183,28 @@ This is an approximate interval procedure. Its actual coverage depends on the po
 
 The relative margin of error is defined as the confidence interval half-width divided by the sample mean:
 
-\[
+$$
+\
 E_{\mathrm{rel}}=
 \frac{t_{0.95,n-1}SE(\bar{x})}{\bar{x}}.
-\]
+\
+$$
 
 For the selected sample,
 
-\[
+$$
+\
 E_{\mathrm{rel}}\approx 0.09974=9.97\%.
-\]
+\
+$$
 
 The requirement is
 
-\[
+$$
+\
 E_{\mathrm{rel}}\leq 25\%.
-\]
+\
+$$
 
 The selected sample meets this precision requirement.
 
@@ -192,22 +214,28 @@ Meeting this requirement does not, by itself, guarantee that the confidence inte
 
 The population total is estimated by multiplying the sample mean by the known population size:
 
-\[
+$$
+\
 \widehat{V}=N\bar{x}.
-\]
+\
+$$
 
 For the selected sample,
 
-\[
+$$
+\
 \widehat{V}=1000\times108.5662
 \approx \$108,566.21.
-\]
+\
+$$
 
 The standard error of the estimated total is
 
-\[
+$$
+\
 SE(\widehat{V})=NSE(\bar{x}).
-\]
+\
+$$
 
 The confidence interval for the total is obtained by multiplying the mean confidence interval bounds by \(N\).
 
@@ -229,20 +257,24 @@ For this case study, the warehouse floor area is assumed to be 10,000 square fee
 
 The estimated retail inventory value per square foot is
 
-\[
+$$
+\
 \widehat{V}_{\mathrm{sq\,ft}}
 =\frac{\widehat{V}}{A},
-\]
+\
+$$
 
 where \(A\) denotes the assumed floor area.
 
 Therefore,
 
-\[
+$$
+\
 \widehat{V}_{\mathrm{sq\,ft}}
 =\frac{\$108,566.21}{10,000}
 \approx \$10.86/\mathrm{sq\,ft}.
-\]
+\
+$$
 
 Since the floor area is treated as known and fixed, the confidence interval bounds for the total inventory value can also be divided by the floor area.
 
@@ -290,19 +322,23 @@ The empirical coverage rate is the proportion of repeated confidence intervals t
 
 The observed coverage was
 
-\[
+$$
+\
 \widehat{p}=\frac{887}{1000}=0.887.
-\]
+\
+$$
 
 This is 1.3 percentage points below the nominal 90% level.
 
 For reference, if the true coverage were 90%, the approximate Monte Carlo standard error for 1,000 independent repetitions would be
 
-\[
+$$
+\
 SE(\widehat{p})=
 \sqrt{\frac{0.9(1-0.9)}{1000}}
 \approx 0.00949.
-\]
+\
+$$
 
 The corresponding approximate 95% range under that benchmark is about 88.1%–91.9%. The observed 88.7% lies within this range.
 
