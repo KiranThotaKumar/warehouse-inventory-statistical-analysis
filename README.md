@@ -179,15 +179,19 @@ Here, \(t_{0.95,n-1}\) is the 95th percentile of the Student's *t* distribution 
 
 The relative margin of error is defined as:
 
-\[
+$$
+\
 RME = \frac{E}{\bar{x}}\times100\%
-\]
+\
+$$
 
-where \(E\) is the confidence-interval half-width. The precision target is:
+where $\(E\)$ is the confidence-interval half-width. The precision target is:
 
-\[
+$$
+\
 RME \leq 25\%
-\]
+\
+$$
 
 The program will report whether the observed sample meets this target. If it does not, the report will state that the requested precision has not been demonstrated by the current sample.
 
@@ -199,16 +203,20 @@ The confidence level is a property of the procedure over repeated samples under 
 
 If the population contains \(N\) boxes, an estimator of the total retail value is:
 
-\[
+$$
+\
 \widehat{V} = N\bar{x}
-\]
+\
+$$
 
 Under SRSWOR, an estimated standard error for the total is:
 
-\[
+$$
+\
 SE(\widehat{V}) =
 N\sqrt{\left(1-\frac{n}{N}\right)\frac{s^2}{n}}
-\]
+\
+$$
 
 A confidence interval for the total can be formed by scaling the mean interval by \(N\), provided the same interval method is appropriate.
 
@@ -220,10 +228,12 @@ Let \(A\) denote the warehouse floor area, measured in square feet.
 
 The estimated retail inventory value per square foot is:
 
-\[
+$$
+\
 \widehat{D} = \frac{\widehat{V}}{A}
 = \frac{N\bar{x}}{A}
-\]
+\
+$$
 
 The unit is currency per square foot (for example, USD/ft²).
 
