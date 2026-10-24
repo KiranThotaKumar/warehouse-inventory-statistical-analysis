@@ -28,7 +28,7 @@
 
 ## 1. Project Overview
 
-This project demonstrates how statistical sampling can be used to estimate the average retail value of boxes stored in a warehouse, estimate the total retail value represented by the inventory, and calculate an inventory-value metric per square foot of warehouse floor space.
+This project demonstrates how statistical sampling can be used to estimate the average retail value of boxes stored in a warehouse and the total retail value represented by the inventory. It also calculates an inventory-value metric per square foot of warehouse floor space.
 
 The implementation will use a synthetic dataset and a reproducible statistical workflow. The analysis will demonstrate sampling design, point estimation, confidence-interval construction, precision assessment, validation, and report generation.
 
